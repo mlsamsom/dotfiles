@@ -18,6 +18,9 @@ lspconfig.servers = {
 local default_servers = {
     -- "ols",
     -- "pyright",
+    "svelte",
+    "tailwindcss",
+    "ts_ls",
 }
 
 -- lsps with default config

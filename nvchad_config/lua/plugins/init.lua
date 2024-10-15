@@ -142,4 +142,15 @@ return {
             })
         end,
     },
+    {
+        "windwp/nvim-ts-autotag",
+        ft = {
+            "svelte",
+            "typescript",
+            "javascript",
+        },
+        config = function()
+            require("nvim-ts-autotag").setup()
+        end,
+    },
 }
