@@ -143,6 +143,12 @@ return {
         end,
     },
     {
+        "sveltejs/language-tools",
+        config = function()
+            require("plugins.configs.lspconfig").svelte.setup()
+        end,
+    },
+    {
         "windwp/nvim-ts-autotag",
         ft = {
             "svelte",
@@ -151,6 +157,12 @@ return {
         },
         config = function()
             require("nvim-ts-autotag").setup()
+        end,
+    },
+    {
+        "ThePrimeagen/htmx-lsp",
+        config = function()
+            require("plugins.configs.lspconfig").htmx.setup()
         end,
     },
 }
